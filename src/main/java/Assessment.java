@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import model.Burger;
 import model.DaoFactory;
+import model.Ingredient;
 
 public class Assessment {
     // Have a Burger Class - properties of condiments - print out a statement about deliciousness factor
@@ -11,8 +12,10 @@ public class Assessment {
         // Let's say we wanted to find the burger with ID 5
         Burger burgerFive = DaoFactory.getBurgersDao().findById(5L);
 
+        Ingredient tomatoes = DaoFactory.getIngredientsDao().findById(5L);
 
-
+        Ingredient qpPickles = new Ingredient("Quarter Pounder Pickles", 3);
+        long resultIngredientID = DaoFactory.getIngredientsDao().createIngredient(qpPickles);
 
         // test making a burger
         Burger bigMac = new Burger("Big Mac", 3, 7, 2, true);
