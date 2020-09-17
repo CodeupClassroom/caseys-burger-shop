@@ -6,6 +6,7 @@ public class Burger implements BurgerSale {
     // properties for bun, pickles, numPatties, Cheese
     private String burgerName;
 
+
     public String getBurgerName() {
         return burgerName;
     }
