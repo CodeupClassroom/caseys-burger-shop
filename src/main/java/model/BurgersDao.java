@@ -5,7 +5,7 @@ import java.util.List;
 
 // This class will implement the `Burgers` interface
 //  therefore, it must have all the methods defined in `Burgers`
-public class BurgersDAO implements Burgers {
+public class BurgersDao implements Burgers {
 
     // Create a temporary list, to hold the burgers as they are created
     private List<Burger> burgers = new ArrayList<>();

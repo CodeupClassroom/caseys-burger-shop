@@ -6,13 +6,22 @@ public class DaoFactory {
 
     // We don't want to require accessing the BurgersDAO directly, instead we will reference its interface
     private static Burgers burgersDao;
+    private static Ingredients ingredientsDao;
 
     // any Bean type we have will get a method called get[Bean]Dao()
     public static Burgers getBurgersDao() {
         if (burgersDao == null) {
-            burgersDao = new BurgersDAO();
+            burgersDao = new BurgersDao();
         }
         return burgersDao;
     }
+
+    public static Ingredients getIngredientsDao() {
+        if (ingredientsDao == null) {
+            ingredientsDao = new IngredientsDao();
+        }
+        return ingredientsDao;
+    }
+
 
 }
