@@ -18,7 +18,6 @@ public class IndexServlet extends HttpServlet {
     // we want to display our 'home page' using this servlet, when someone loads
     //  'http://localhost:8080/'
 
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // This will be the page we access when we hit 'http://localhost:8080/ - without any URL patterns to recognize
@@ -31,8 +30,13 @@ public class IndexServlet extends HttpServlet {
 
         req.setAttribute("allBurgers", allBurgers); // sending our List<Burger> allBurgers as the attribute "allBurgers"
 
+        // create a list of all our existing sodas
+
+        // add a new attribute called "allSodas" or something similar
+
+
+
         req.getRequestDispatcher("/index.jsp").forward(req, resp);
-        // the path is relative to our 'webapp' folder
 
     }
 }
