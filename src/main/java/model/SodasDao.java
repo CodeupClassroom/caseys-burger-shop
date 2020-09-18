@@ -9,12 +9,12 @@ public class SodasDao implements Sodas {
     List<Soda> sodas = new ArrayList<>();
 
     public SodasDao() {
-        Soda coke = new Soda("Coca-Cola", 3);
+        Soda coke = new Soda("Coca-Cola", 1);
         coke.setId(1L);
         // add it to our our local array list of sodas
         sodas.add(coke);
 
-        Soda drPepper = new Soda("Dr Pepper", 3);
+        Soda drPepper = new Soda("Dr Pepper", 2);
         drPepper.setId(2L);
         // add it to our our local array list of sodas
         sodas.add(drPepper);
