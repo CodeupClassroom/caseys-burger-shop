@@ -14,6 +14,24 @@ public class Ingredient implements Serializable {
     // 3. int quantity
     private int quantity;
 
+    // define what color the bell pepper is
+    // boolean isYellow;
+    // boolean isGreen;
+    // boolean isRed;
+    // boolean isMulticolor;
+    // If we had to have a boolean for every color that exists, we would have WAY too many properties for this single "characteristic" that we are trying to define
+    // Instead, we should just make a separate bean called "Color" to define all the different colors we can have, while keeping only a single property (ingredientColor) in the Ingredient Bean
+
+    // private Color ingredientColor;
+
+    // boolean isNews;
+    // boolean isComedy;
+    // boolean isDiy;
+    // Again, if we had fifty categories, we wouldn't want to have to update every single instance of an Ingredient every time we add a new category to our app.
+    // Rather, just create a new Bean called "Category" that can define all the categories, and all we reference here is the single property "category" - which references an instance of the "Category" class (Bean)
+
+    // private Category category;
+
 
     // Create a zero-argument constructor
     public Ingredient() {}

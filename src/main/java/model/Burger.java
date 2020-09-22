@@ -3,6 +3,7 @@ package model;
 import java.io.Serializable;
 import java.util.List;
 
+// Bean
 // Must implement Serializable for our Beans when using MVC
 public class Burger implements Serializable {
 
@@ -11,6 +12,11 @@ public class Burger implements Serializable {
 
     // must be able to differentiate each burger from the rest, so a unique key is needed
     private long id;
+
+    // blog
+    //     posts
+    //     post -> {content, title, author}
+    //     categories -> {news-type, editorial, diy, self-help, comedy}
 
     private String burgerName;
     // private int numBuns; // 3 for big mac, etc

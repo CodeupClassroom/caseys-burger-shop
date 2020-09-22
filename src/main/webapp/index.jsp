@@ -50,7 +50,8 @@
                 <li class="list-group-item list-group-item-action">
                     <strong>
                             ${soda.name}
-                    </strong> - ${cokeSizes[loop.index]}
+                    </strong> - <%--${cokeSizes[loop.index]}--%> <!-- Either of these will work! -->
+                                ${cokeSizes[soda.id - 1]} - Quantity: ${soda.quantity}
                 </li>
 
             </c:forEach>

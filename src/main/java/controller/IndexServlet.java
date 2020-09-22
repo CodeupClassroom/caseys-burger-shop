@@ -34,8 +34,9 @@ public class IndexServlet extends HttpServlet {
         // create a list of all our existing sodas
         List<Soda> allSodas = new ArrayList<>();
         allSodas.add(DaoFactory.getSodasDao().findById(1L)); // coke
-        allSodas.add(DaoFactory.getSodasDao().findById(2L)); // drpepper
+        allSodas.add(DaoFactory.getSodasDao().findById(2L)); // drPepper
         allSodas.add(DaoFactory.getSodasDao().findById(3L)); // sprite
+
 
         // add a new attribute called "allSodas" or something similar
         req.setAttribute("allSodas", allSodas);
@@ -62,9 +63,7 @@ public class IndexServlet extends HttpServlet {
 
         }
 
-
-
-        //  [ "medium", "medium", "Super-Size" ]
+        //  [ "small", "medium", "SuperSize" ]
         req.setAttribute("cokeSizes", cokeSize);
 
         req.getRequestDispatcher("/index.jsp").forward(req, resp);

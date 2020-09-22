@@ -9,7 +9,7 @@ public class SodasDao implements Sodas {
     List<Soda> sodas = new ArrayList<>();
 
     public SodasDao() {
-        Soda coke = new Soda("Coca-Cola", 1);
+        Soda coke = new Soda("Coca-Cola", 3);
         coke.setId(1L);
         // add it to our our local array list of sodas
         sodas.add(coke);
@@ -19,7 +19,7 @@ public class SodasDao implements Sodas {
         // add it to our our local array list of sodas
         sodas.add(drPepper);
 
-        Soda sprite = new Soda("Sprite", 3);
+        Soda sprite = new Soda("Sprite", 1);
         sprite.setId(3L);
         // add it to our our local array list of sodas
         sodas.add(sprite);
