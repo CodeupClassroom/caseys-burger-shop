@@ -3,7 +3,7 @@
 In this branch, we will be changing the way our Burger info is stored. Rather than storing it in an **ArrayList**, we are going to be storing it in a new database, so that the burger info can persist between restarts of our server.
 
 ## Tasks
-1. Create a **Config.java** file inside your **model** that will hold your credentials needed to connect to a local database.
+1. Create a **Config.java** file inside your **model** folder that will hold your credentials needed to connect to a local database (define the Connection _outside_ of the constructor, just like you did in the curriculum exercises).
 2. In the **BurgersDao** constructor, create a connection to your MySQL Server using JDBC. (This is where we previously instantiated all of our burger objects. Keep that code there, for now.)
 3. Write an **all()** method in your BurgersDao that will select all existing burger entries in the burgers DB table and return them as a List of Burger objects.
 4. Write an **insert()** method in your BurgersDao that will take in a Burger object and insert it into the proper database table. This method should return the **Long id** of the newly added Burger.
